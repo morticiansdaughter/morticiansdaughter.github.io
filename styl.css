@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;  
+  margin: 0;                /* smaze okraje */
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #2E4F21;
+  background-color: #FAFAFA;
+}
+
+h1 { 
+    font-size: 80px; 
+    font-weight: 400;
+     letter-spacing: -3px; 
+     margin-bottom: 30px; 
+}
+
+h2 {
+     font-size: 56px;
+      font-weight: 400; 
+      letter-spacing: -2px; 
+      text-align: center; 
+      margin-bottom: 20px; 
+    }
+
+
+h3 { 
+    font-size: 36px;
+     font-weight: 400; 
+     letter-spacing: -1px; 
+     margin-bottom: 20px; 
+    }
+
+p  { 
+    margin-bottom: 20px; 
+}
+
+
+button {
+  background-color: #2E4F21;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+header {
+  background-color: #A0F1BD;
+  padding: 30px 40px 100px;
+  border-radius: 0 0 30px 30px;
+}
+
+nav {
+  display: flex;                    
+  justify-content: space-between;   
+  align-items: center;             
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 20px;                        
+}
+
+nav a {
+  color: #2E4F21;
+  text-decoration: none;
+}
+
+.hlavni {
+  display: flex;                    
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0 0 150px;
+}
+
+.hlavni img {
+  width: 400px;
+}
+
+section {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.karty {
+  display: flex;
+  flex-direction: column;          
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.karta {
+  display: flex;                    
+  align-items: center;
+  gap: 40px;
+  width: 1000px;
+  max-width: 100%;
+  padding: 50px;
+  text-align: left;
+  background-color: #D2F8DC;
+  border-radius: 25px;
+}
+
+.karta:nth-child(even) {
+  flex-direction: row-reverse;      
+  margin-left: auto;             
+}
+
+.karta img {
+  width: 250px;
+}
+
+.tagy {
+  display: flex;
+  gap: 10px;
+}
+
+.tagy span {
+  background-color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+
+.sloupce {
+  display: flex;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.sloupce div {
+  flex: 1;                          
+  padding: 0 40px;
+  border-left: 1px solid #2E4F21;
+}
+
+.sloupce h3 { font-size: 28px; }
+
+
+.foto {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;  /*oriznuti*/
+}
+
+.uvod {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  text-align: left;
+}
+
+.uvod h2 {
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.uvod p {
+  max-width: 700px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.plan {
+  display: flex;
+  gap: 20px;
+  padding-top: 0;                   
+}
+
+.plan div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 40px;
+  background-color: #2E4F21;
+  color: white;
+  text-align: left;
+  border-radius: 25px;
+}
+
+.plan button {
+  background-color: white;
+  color: #2E4F21;
+}
+
+.plan img {
+  flex: 1;
+  width: 50%;                       
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+footer {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  min-height: 340px;
+  background-color: #2E4F21;
+  color: white;
+}
+
+footer > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer > div:last-child p {
+  text-align: right;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer button {
+  background-color: white;
+  color: #2E4F21;
+}
+
+.odkazy {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.recenze {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto 0;
+  text-align: left;
+}
+
+/* přepínače nejsou vidět */
+.recenze input {
+  display: none;
+}
+
+.menu {
+  width: 310px;
+  padding-right: 40px;
+  border-right: 1px solid #2E4F21;
+}
+
+.menu label {
+  display: block;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu b {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  border-top: 1px solid #2E4F21;
+}
+
+.menu small {
+  font-size: 11px;
+}
+
+/*ostatni recenze jsou schovane*/
+.texty {
+  flex: 1;
+}
+
+
+.texty div {
+  display: none;
+}
+
+.texty p {
+  font-size: 28px;
+  font-weight: 300;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.texty span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.texty img {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+}
+
+/*barva*/
+#r1:checked ~ .menu label:nth-child(1),
+#r2:checked ~ .menu label:nth-child(2),
+#r3:checked ~ .menu label:nth-child(3) {
+  background-color: #2E4F21;
+  color: white;
+}
+
+#r1:checked ~ .menu label:nth-child(1) b,
+#r2:checked ~ .menu label:nth-child(2) b,
+#r3:checked ~ .menu label:nth-child(3) b {
+  border-color: white;
+}
+
+/*zobrazeni urciteho textu*/
+#r1:checked ~ .texty div:nth-child(1),
+#r2:checked ~ .texty div:nth-child(2),
+#r3:checked ~ .texty div:nth-child(3) {
+  display: block;
+}
